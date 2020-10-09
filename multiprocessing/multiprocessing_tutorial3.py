@@ -16,6 +16,7 @@ def sum_square_with_mp(numbers):
     p.close()
     p.join()
     end_time = time.time() - start_time
+    
     print(f"Processing {len(numbers)} numbers took {end_time} time using multiprocessing")
 
 # Function for calculating sum of squares without using multiprocessing

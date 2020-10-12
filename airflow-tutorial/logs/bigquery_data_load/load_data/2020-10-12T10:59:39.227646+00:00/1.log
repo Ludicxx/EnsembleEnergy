@@ -1,0 +1,13 @@
+[2020-10-12 16:29:46,870] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: bigquery_data_load.load_data 2020-10-12T10:59:39.227646+00:00 [queued]>
+[2020-10-12 16:29:46,883] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: bigquery_data_load.load_data 2020-10-12T10:59:39.227646+00:00 [queued]>
+[2020-10-12 16:29:46,883] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-12 16:29:46,883] {taskinstance.py:880} INFO - Starting attempt 1 of 1
+[2020-10-12 16:29:46,883] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-12 16:29:46,965] {taskinstance.py:900} INFO - Executing <Task(GoogleCloudStorageToBigQueryOperator): load_data> on 2020-10-12T10:59:39.227646+00:00
+[2020-10-12 16:29:46,981] {standard_task_runner.py:53} INFO - Started process 187958 to run task
+[2020-10-12 16:29:47,161] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: bigquery_data_load.load_data 2020-10-12T10:59:39.227646+00:00 [running]> ludicxx
+[2020-10-12 16:29:50,569] {logging_mixin.py:112} INFO - [2020-10-12 16:29:50,568] {bigquery_hook.py:1347} INFO - Waiting for job to complete : vg-airflow-tutorial-demo, job_-r7m6_oG5E8BafaaC78sFBhYOnTi
+[2020-10-12 16:29:55,900] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=bigquery_data_load, task_id=load_data, execution_date=20201012T105939, start_date=20201012T105946, end_date=20201012T105955
+[2020-10-12 16:29:56,718] {logging_mixin.py:112} INFO - [2020-10-12 16:29:56,717] {local_task_job.py:103} INFO - Task exited with return code 0

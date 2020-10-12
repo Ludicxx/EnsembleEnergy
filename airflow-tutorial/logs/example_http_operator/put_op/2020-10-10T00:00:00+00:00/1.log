@@ -1,0 +1,17 @@
+[2020-10-11 19:15:27,826] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: example_http_operator.put_op 2020-10-10T00:00:00+00:00 [queued]>
+[2020-10-11 19:15:27,838] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: example_http_operator.put_op 2020-10-10T00:00:00+00:00 [queued]>
+[2020-10-11 19:15:27,838] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-11 19:15:27,839] {taskinstance.py:880} INFO - Starting attempt 1 of 2
+[2020-10-11 19:15:27,839] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-11 19:15:27,908] {taskinstance.py:900} INFO - Executing <Task(SimpleHttpOperator): put_op> on 2020-10-10T00:00:00+00:00
+[2020-10-11 19:15:27,916] {standard_task_runner.py:53} INFO - Started process 108592 to run task
+[2020-10-11 19:15:28,070] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: example_http_operator.put_op 2020-10-10T00:00:00+00:00 [running]> ludicxx
+[2020-10-11 19:15:28,082] {http_operator.py:87} INFO - Calling HTTP method
+[2020-10-11 19:15:28,086] {logging_mixin.py:112} INFO - [2020-10-11 19:15:28,086] {base_hook.py:87} INFO - Using connection to: id: http_default. Host: https://www.httpbin.org/, Port: None, Schema: None, Login: None, Password: None, extra: None
+[2020-10-11 19:15:28,088] {logging_mixin.py:112} INFO - [2020-10-11 19:15:28,088] {http_hook.py:136} INFO - Sending 'PUT' to url: https://www.httpbin.org/put
+[2020-10-11 19:15:28,786] {logging_mixin.py:112} WARNING - /home/ludicxx/anaconda3/envs/airflow-tutorial/lib/python3.7/site-packages/urllib3/connectionpool.py:988: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.httpbin.org'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning,
+[2020-10-11 19:15:29,032] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=example_http_operator, task_id=put_op, execution_date=20201010T000000, start_date=20201011T134527, end_date=20201011T134529
+[2020-10-11 19:15:37,658] {logging_mixin.py:112} INFO - [2020-10-11 19:15:37,657] {local_task_job.py:103} INFO - Task exited with return code 0

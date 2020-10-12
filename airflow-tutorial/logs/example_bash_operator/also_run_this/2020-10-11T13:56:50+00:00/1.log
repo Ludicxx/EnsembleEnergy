@@ -1,0 +1,19 @@
+[2020-10-11 19:29:18,414] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this 2020-10-11T13:56:50+00:00 [queued]>
+[2020-10-11 19:29:18,425] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this 2020-10-11T13:56:50+00:00 [queued]>
+[2020-10-11 19:29:18,425] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-11 19:29:18,425] {taskinstance.py:880} INFO - Starting attempt 1 of 1
+[2020-10-11 19:29:18,425] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-10-11 19:29:18,497] {taskinstance.py:900} INFO - Executing <Task(BashOperator): also_run_this> on 2020-10-11T13:56:50+00:00
+[2020-10-11 19:29:18,507] {standard_task_runner.py:53} INFO - Started process 109552 to run task
+[2020-10-11 19:29:18,644] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: example_bash_operator.also_run_this 2020-10-11T13:56:50+00:00 [running]> ludicxx
+[2020-10-11 19:29:18,656] {bash_operator.py:82} INFO - Tmp dir root location: 
+ /tmp
+[2020-10-11 19:29:18,656] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmpwvurl47m/also_run_thisqeafb4ql
+[2020-10-11 19:29:18,657] {bash_operator.py:115} INFO - Running command: echo "run_id=manual__2020-10-11T13:56:50+00:00 | dag_run=<DagRun example_bash_operator @ 2020-10-11 13:56:50+00:00: manual__2020-10-11T13:56:50+00:00, externally triggered: True>"
+[2020-10-11 19:29:18,663] {bash_operator.py:122} INFO - Output:
+[2020-10-11 19:29:18,664] {bash_operator.py:126} INFO - run_id=manual__2020-10-11T13:56:50+00:00 | dag_run=<DagRun example_bash_operator @ 2020-10-11 13:56:50+00:00: manual__2020-10-11T13:56:50+00:00, externally triggered: True>
+[2020-10-11 19:29:18,664] {bash_operator.py:130} INFO - Command exited with return code 0
+[2020-10-11 19:29:18,670] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=example_bash_operator, task_id=also_run_this, execution_date=20201011T135650, start_date=20201011T135918, end_date=20201011T135918
+[2020-10-11 19:29:28,334] {logging_mixin.py:112} INFO - [2020-10-11 19:29:28,333] {local_task_job.py:103} INFO - Task exited with return code 0
